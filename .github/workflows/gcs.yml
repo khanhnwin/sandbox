@@ -22,7 +22,7 @@ jobs:
       && github.repository == 'khanhnwin/sandbox'
     steps:
     - id: Checkout
-        uses: actions/checkout@main
+      uses: actions/checkout@main
     - id: 'auth'
       uses: 'google-github-actions/auth@v0'
       with:
