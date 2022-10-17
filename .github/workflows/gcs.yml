@@ -32,6 +32,7 @@ jobs:
       with:
         path: 'storage/flutter-survey-metadata.json'
         destination: 'khanh-sandbox-bucket/'
+        predefinedAcl: publicRead
     - id: 'uploaded-files'
       env:
         file: '${{ steps.upload-file.outputs.uploaded }}'
