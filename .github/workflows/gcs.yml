@@ -33,7 +33,6 @@ jobs:
         path: 'storage/flutter-survey-metadata.json'
         destination: 'khanh-sandbox-bucket/flutter-survey-metadata.json'
     - id: 'uploaded-files'
-      uses: actions/checkout@main
       env:
         file: '${{ steps.upload-file.outputs.uploaded }}'
       run: echo $file
