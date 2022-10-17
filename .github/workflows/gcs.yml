@@ -21,6 +21,8 @@ jobs:
       && github.ref == 'refs/heads/main'
       && github.repository == 'khanhnwin/sandbox'
     steps:
+    - id: Checkout
+        uses: actions/checkout@main
     - id: 'auth'
       uses: 'google-github-actions/auth@v0'
       with:
@@ -28,7 +30,7 @@ jobs:
     - id: 'upload-file'
       uses: 'google-github-actions/upload-cloud-storage@v0'
       with:
-        path: 'storage/flutter-survey-metadata.json'
+        path: '/storage/flutter-survey-metadata.json'
         destination: 'gs://khanh-sandbox-bucket/flutter-survey-metadata.json'
     - id: 'uploaded-files'
       uses: actions/checkout@main
