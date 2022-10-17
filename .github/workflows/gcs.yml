@@ -31,7 +31,7 @@ jobs:
       uses: 'google-github-actions/upload-cloud-storage@v0'
       with:
         path: 'storage/flutter-survey-metadata.json'
-        destination: 'gs://khanh-sandbox-bucket/flutter-survey-metadata.json'
+        destination: 'khanh-sandbox-bucket/flutter-survey-metadata.json'
     - id: 'uploaded-files'
       uses: actions/checkout@main
       env:
