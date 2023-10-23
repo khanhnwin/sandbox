@@ -1,0 +1,3 @@
+steps:
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  args: ['gsutil', 'cp', '-r', 'storage', 'gs://khanh-sandbox-bucket/storage']
