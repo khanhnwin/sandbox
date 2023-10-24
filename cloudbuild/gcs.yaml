@@ -5,6 +5,6 @@ steps:
     - -c
     - |
       ls
-      gsutil cp -r storage gs://khanh-sandbox-bucket/storage
+      gsutil cp -r storage/flutter-survey-metadata.json gs://khanh-sandbox-bucket
 options:
   logging: CLOUD_LOGGING_ONLY
