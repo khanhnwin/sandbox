@@ -1,5 +1,9 @@
 steps:
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-  args: ['gsutil', 'cp', '-r', 'storage', 'gs://khanh-sandbox-bucket/storage']
+  args:
+    - -c
+    - |
+      ls
+      gsutil cp -r storage gs://khanh-sandbox-bucket/storage
 options:
   logging: CLOUD_LOGGING_ONLY
